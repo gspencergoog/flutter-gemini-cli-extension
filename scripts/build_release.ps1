@@ -1,3 +1,7 @@
+# Copyright 2025 The Flutter Authors.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
 if (-not $env:GITHUB_REF) { $env:GITHUB_REF = "refs/tags/HEAD" }
 $tagName = $env:GITHUB_REF.Substring($env:GITHUB_REF.LastIndexOf("/") + 1)
 $archiveName = "win32.flutter.zip"

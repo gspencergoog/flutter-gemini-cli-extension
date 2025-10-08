@@ -97,4 +97,46 @@ You must ask the user to review this implementation plan and they must approve i
 ## Implementation
 
 After getting explicit approval from the user for the IMPLEMENTATION.md document, begin implementing the plan.
+
+## Markdown Document Format
+
+When writing Markdown for this project, use the following format:
+
+````md
+# 1. Main Section Head
+
+## 1.2 Secondary Section Head
+
+Unordered lists use dashes:
+
+- Unordered list item 1.
+- Unordered list item 2.
+
+Ordered lists have only one space after the number.
+
+1. Ordered list item 1.
+   a. Ordered list item 1.a.
+   b. Ordered list item 1.b.
+2. Ordered list item 2.
+
+   Blocks that are part of a list item are indented to the beginning of the list item text.
+
+   ```code
+    // code block that is part of Ordered list item 2.
+    // There are blank lines before and after code block.
+   ```
+
+Fenced blocks always include a language specifier, even if it is "txt".
+
+```txt
+my_project/
+├── lib/
+└── DESIGN.md
+```
+
+Don't end headings with a colon.
+
+- **Bold Items**: Place any colons outside of the bold asterisks when prefacing text.
+
+````
 """

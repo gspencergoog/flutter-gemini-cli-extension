@@ -107,4 +107,46 @@ Once the bug is confirmed to be fixed and the application is stable:
 - [ ] Run `dart_fix`, `dart_format`, `analyze_files`, and `run_tests` to ensure the codebase is clean and healthy.
 - [ ] Prepare a descriptive commit message for the fix, following the "Conventional Commits" specification. The message should include a subject, an optional body explaining the "why" behind the change, and a footer (e.g., `Fixes: #123`) if the user provides an issue number or link. Present the message to the user for approval before committing the changes.
   - Do not include the DEBUGGING_PLAN.md file in the commit. When done, ask the user if they would like to remove it.
+
+## Markdown Document Format
+
+When writing Markdown for this project, use the following format:
+
+````md
+# 1. Main Section Head
+
+## 1.2 Secondary Section Head
+
+Unordered lists use dashes:
+
+- Unordered list item 1.
+- Unordered list item 2.
+
+Ordered lists have only one space after the number.
+
+1. Ordered list item 1.
+   a. Ordered list item 1.a.
+   b. Ordered list item 1.b.
+2. Ordered list item 2.
+
+   Blocks that are part of a list item are indented to the beginning of the list item text.
+
+   ```code
+    // code block that is part of Ordered list item 2.
+    // There are blank lines before and after code block.
+   ```
+
+Fenced blocks always include a language specifier, even if it is "txt".
+
+```txt
+my_project/
+├── lib/
+└── DESIGN.md
+```
+
+Don't end headings with a colon.
+
+- **Bold Items**: Place any colons outside of the bold asterisks when prefacing text.
+
+````
 """
