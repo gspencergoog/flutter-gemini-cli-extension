@@ -1,6 +1,6 @@
 # Description
 
-Describe the feature being introduced.
+Describe the change being proposed.
 
 ## Testing
 
