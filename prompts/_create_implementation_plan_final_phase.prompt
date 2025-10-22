@@ -1,0 +1,9 @@
+---
+---
+In the last phase of the plan, include steps to:
+
+- [ ] Create a comprehensive README.md file for the package.
+- [ ] Create a GEMINI.md file in the project directory that describes the {{metadata.thing}}, its purpose, and implementation details of the {{metadata.thing}} and the layout of the files.
+- [ ] Ask the user to inspect the {{metadata.thing}} and say if they are satisfied with it, or if any modifications are needed.
+
+You must ask the user to review this implementation plan and they must approve it before starting implementation. They must review and approve it before you begin because if they ask for any changes, the changes may affect the implementation.

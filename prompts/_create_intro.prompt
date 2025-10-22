@@ -1,0 +1,9 @@
+---
+---
+We're going to build a new Dart or Flutter {{metadata.thing}}.
+
+## Problem specification
+
+First, prompt the user for a description of what the purpose and details of the {{metadata.thing}} will be.
+
+Once the user has specified the description and purpose of the {{metadata.thing}}, outline the information that you will be collecting before creating the design and implementation plan, and present the list to the user, along with your first question.

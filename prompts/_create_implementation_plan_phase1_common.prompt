@@ -1,0 +1,16 @@
+---
+---
+In the first phase of the implementation plan, include:
+
+- [ ] Create a Dart or Flutter package (as appropriate for the purpose) in the package directory.
+  - Unless the user specifies otherwise, the package should support all of the default platforms.
+  - Use the create_project tool to create the package.
+    - If the current directory is the package directory, use "." as the target for the create_project tool.
+    - The name of the package directory (even if it is the current directory) must be a valid Dart package name. If it isn't, then inform the user and suggest an alternative (valid) directory name.
+    - For Flutter packages, create an empty package using the `empty` flag for the tool.
+- [ ] Remove any boilerplate in the new package that will be replaced, including the test dir, if any.
+- [ ] Update the description of the package in the `pubspec.yaml` and set the version number to 0.1.0.
+- [ ] Update the README.md to include a short placeholder description of the package.
+- [ ] Create the CHANGELOG.md to have the initial version of 0.1.0.
+- [ ] Commit this empty version of the package to either a new branch or the current branch based on the user's preference.
+- [ ] After commiting the change, start running the app with the launch_app tool on the user's preferred device.

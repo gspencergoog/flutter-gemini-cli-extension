@@ -1,0 +1,9 @@
+---
+---
+## Implementation plan
+
+After getting explicit approval from the user for the {{metadata.design_doc}} document, Develop a **DETAILED** Markdown-formatted phased implementation plan of checkboxed tasks that need to be performed in order to finish developing the package. Save the implementation plan in {{metadata.implementation_doc}} in the package directory.
+
+The implementation plan should include a section for a "Journal" which will be updated after each phase and contain a log of the actions taken, things learned, surprises, and deviations from the plan. It should be in chronological order.
+
+The plan should include instructions similar to: "After completing a task, if you added any TODOs to the code or didn't fully implement anything, make sure to add new tasks so that you can come back and complete them later." to prevent leaving tasks unfinished.

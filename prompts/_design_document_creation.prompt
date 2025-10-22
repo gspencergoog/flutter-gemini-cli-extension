@@ -1,0 +1,20 @@
+---
+---
+## Design document
+
+Develop a **DETAILED** Markdown-formatted design document that follows all of the guidance you have about Dart and Flutter design patterns, rules, best practices, and core principles. Save the design document in DESIGN.md in the package directory. Feel free to use your available tools to research any aspects of the design that need clarification.
+
+The design doc should (at least) include sections for:
+
+- An overview
+- A detailed analysis of the goal or problem
+- Alternatives considered
+- A detailed design for the new package
+- Any diagrams needed to explain the design, in Mermaid format.
+  - Be sure to put quotes around labels that include special characters (e.g. parenthesis).
+- A summary of the design
+- References to research URLs used to arrive at the design.
+
+Be sure to **actually fetch and read** the research URLs **before** writing the design document. Do actual web research on the topics that are important to the design.
+
+You must ask the user to review this design document and they must approve it before you continue on to create the implementation plan. They must review and approve it first because if they ask for any changes, it may affect the implementation plan.

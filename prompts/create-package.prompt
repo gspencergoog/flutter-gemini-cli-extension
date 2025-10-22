@@ -1,0 +1,29 @@
+---
+name: create-package
+metadata:
+  description: Create a new Dart or Flutter package, with an opinionated structure.
+  design_doc: DESIGN.md
+  implementation_doc: IMPLEMENTATION.md
+  thing: package
+---
+description = "{{ metadata.description }}"
+
+prompt = """
+{{> create_intro}}
+
+{{> create_collecting_info_package}}
+
+{{> design_document_creation}}
+
+{{> create_implementation_plan_intro}}
+
+{{> create_implementation_plan_phase1_common}}
+
+{{> implementation_phase_steps}}
+
+{{> create_implementation_plan_final_phase}}
+
+{{> implementation_section}}
+
+{{> markdown}}
+"""
