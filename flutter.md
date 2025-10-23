@@ -1,20 +1,15 @@
-# AI rules for Flutter
+<FLUTTER_DART_AI_RULES>
 
-You are an expert in Flutter and Dart development. Your goal is to build
-beautiful, performant, and maintainable applications following modern best
-practices. You have expert experience with application writing, testing, and
-running Flutter applications for various platforms, including desktop, web, and
-mobile platforms.
+# AI rules for Flutter and Dart development
 
-## Interaction Guidelines
+When working on tasks related to Flutter and Dart, you are an expert in Flutter
+and Dart development. Your goal is to build beautiful, performant, and
+maintainable applications following modern best practices. You have expert
+experience with application writing, testing, and running Flutter applications
+for various platforms, including desktop, web, and mobile platforms.
 
-- **User Persona:** Assume the user is familiar with programming concepts but
-  may be new to Dart.
-- **Explanations:** When generating code, provide explanations for Dart-specific
-  features like null safety, futures, and streams.
-- **Clarification:** If a request is ambiguous, ask for clarification on the
-  intended functionality and the target platform (e.g., command-line, web,
-  server).
+## Dart and Flutter AI Interaction Guidelines
+
 - **Dependencies:** When suggesting new dependencies from `pub.dev`, explain
   their benefits.
 - **Formatting:** Use the `dart_format` tool to ensure consistent code
@@ -29,7 +24,7 @@ mobile platforms.
 - **Standard Structure:** Assumes a standard Flutter project structure with
   `lib/main.dart` as the primary application entry point.
 
-## Flutter style guide
+## Flutter Style Guide
 
 - **SOLID Principles:** Apply SOLID principles throughout the codebase.
 - **Concise and Declarative:** Write concise, modern, technical Dart code.
@@ -136,16 +131,7 @@ pub add override:<package_name>:1.0.0`.
 - **Build Method Performance:** Avoid performing expensive operations, like
   network calls or complex computations, directly within `build()` methods.
 
-## API Design Principles
-
-When building reusable APIs, such as a library, follow these principles.
-
-- **Consider the User:** Design APIs from the perspective of the person who will
-  be using them. The API should be intuitive and easy to use correctly.
-- **Documentation is Essential:** Good documentation is a part of good API
-  design. It should be clear, concise, and provide examples.
-
-## Application Architecture
+## Flutter Application Architecture
 
 - **Separation of Concerns:** Aim for separation of concerns similar to
   MVC/MVVM, with defined Model, View, and ViewModel/Controller roles.
@@ -158,7 +144,16 @@ When building reusable APIs, such as a library, follow these principles.
   where each feature has its own presentation, domain, and data subfolders. This
   improves navigability and scalability.
 
-## Lint Rules
+## Dart API Design Principles
+
+When building reusable APIs, such as a library, follow these principles.
+
+- **Consider the User:** Design APIs from the perspective of the person who will
+  be using them. The API should be intuitive and easy to use correctly.
+- **Documentation is Essential:** Good documentation is a part of good API
+  design. It should be clear, concise, and provide examples.
+
+## Dart Lint Rules
 
 Include the package in the `analysis_options.yaml` file. Use the following
 analysis_options.yaml file as a starting point:
@@ -173,7 +168,7 @@ linter:
     # prefer_single_quotes: true
 ```
 
-### State Management
+## Flutter State Management
 
 - **Built-in Solutions:** Prefer Flutter's built-in state management solutions.
   Do not use a third-party package unless explicitly requested.
@@ -212,14 +207,14 @@ linter:
   coupling (note: this document generally defaults against third-party packages
   for state management unless explicitly requested).
 
-### Data Flow
+## Flutter Data Flow
 
 - **Data Structures:** Define data structures (classes) to represent the data
   used in the application.
 - **Data Abstraction:** Abstract data sources (e.g., API calls, database
   operations) using Repositories/Services to promote testability.
 
-### Routing
+## Flutter App Routing/Deep Linking
 
 - **GoRouter:** Use the `go_router` package for declarative navigation, deep
   linking, and web support.
@@ -274,7 +269,7 @@ linter:
   Navigator.pop(context);
   ```
 
-### Data Handling & Serialization
+## Dart Data Handling & Serialization
 
 - **JSON Serialization:** Use `json_serializable` and `json_annotation` for
   parsing and encoding JSON data.
@@ -299,7 +294,7 @@ linter:
   }
   ```
 
-### Logging
+## Dart Logging
 
 - **Structured Logging:** Use the `log` function from `dart:developer` for
   structured logging that integrates with Dart DevTools.
@@ -324,7 +319,7 @@ linter:
   }
   ```
 
-## Code Generation
+## Dart Code Generation
 
 - **Build Runner:** If the project uses code generation, ensure that
   `build_runner` is listed as a dev dependency in `pubspec.yaml`.
@@ -337,7 +332,7 @@ linter:
   dart run build_runner build --delete-conflicting-outputs
   ```
 
-## Testing
+## Flutter and Dart Testing
 
 - **Running Tests:** To run tests, use the `run_tests` tool if it is available,
   otherwise use `flutter test`.
@@ -347,7 +342,7 @@ linter:
 - **Assertions:** Prefer using `package:checks` for more expressive and readable
   assertions over the default `matchers`.
 
-### Testing Best practices
+### Flutter and Dart Testing Best Practices
 
 - **Convention:** Follow the Arrange-Act-Assert (or Given-When-Then) pattern.
 - **Unit Tests:** Write unit tests for domain logic, data layer, and state
@@ -364,7 +359,7 @@ linter:
   avoid it for mocks.
 - **Coverage:** Aim for high test coverage.
 
-## Visual Design & Theming
+## Flutter App Visual Design & Theming
 
 - **UI Design:** Build beautiful and intuitive user interfaces that follow
   modern design guidelines.
@@ -384,7 +379,7 @@ linter:
   and other interactive elements have a shadow with elegant use of color to
   create a "glow" effect.
 
-### Theming
+### Flutter Theming
 
 - **Centralized Theme:** Define a centralized `ThemeData` object to ensure a
   consistent application-wide style.
@@ -424,7 +419,7 @@ linter:
   );
   ```
 
-### Assets and Images
+### Flutter Assets and Images
 
 - **Image Guidelines:** If images are needed, make them relevant and meaningful,
   with appropriate size, layout, and licensing (e.g., freely available). Provide
@@ -467,7 +462,7 @@ linter:
   )
   ```
 
-## UI Theming and Styling Code
+## Flutter UI Theming and Styling Code
 
 - **Responsiveness:** Use `LayoutBuilder` or `MediaQuery` to create responsive
   UIs.
@@ -589,7 +584,7 @@ final ButtonStyle myButtonStyle = ButtonStyle(
 );
 ```
 
-## Layout Best Practices
+## Flutter UI Layout Best Practices
 
 ### Building Flexible and Overflow-Safe Layouts
 
@@ -662,7 +657,7 @@ final ButtonStyle myButtonStyle = ButtonStyle(
   }
   ```
 
-## Color Scheme Best Practices
+## Flutter App Color Scheme Best Practices
 
 ### Contrast Ratios
 
@@ -736,7 +731,7 @@ textTheme: const TextTheme(
 ),
 ```
 
-## Documentation
+## Dart Documentation
 
 - **`dartdoc`:** Write `dartdoc`-style comments for all public APIs.
 
@@ -789,7 +784,7 @@ textTheme: const TextTheme(
 - **Place doc comments before annotations:** Documentation should come before
   any metadata annotations.
 
-## Accessibility (A11Y)
+## Flutter Accessibility (A11Y)
 
 Implement accessibility features to empower all users, assuming a wide variety
 of users with different physical abilities, mental abilities, age groups,
@@ -804,7 +799,7 @@ education levels, and learning styles.
 - **Screen Reader Testing:** Regularly test your app with TalkBack (Android) and
   VoiceOver (iOS).
 
-## Most Important rules for Dart development
+## Most Important rules for Dart and Flutter development
 
 - **PREREQUISITES**:
   - Before calling tools which operate on the project, you must use the
@@ -835,3 +830,5 @@ education levels, and learning styles.
 - Before committing changes to git, run `dart_fix` and `dart_format`.
 - When creating git commit messages, always escape backticks and dollar signs.
   They will be interpreted as shell command escapes otherwise.
+
+</FLUTTER_DART_AI_RULES>
